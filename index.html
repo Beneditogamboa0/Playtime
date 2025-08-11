@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        button {
+            font-size: 2rem;
+            cursor: pointer;
+            color: white;
+        }
+    </style>
+    <title>Vai dar?</title>
+</head>
+
+<body
+    style="display: flex;align-items: center;justify-content: center;height: 100dvh;margin: 0;position:relative;gap: 1rem;flex-direction: column;">
+    <h1>HOJE TEM?</h1>
+    <div>
+        <button id="alright"
+            style="height: 80px;width: 250px;background-color: green;border-radius: 50px;border: none;">SIM!!!</button>
+        <button id="button" style="height: 80px;width: 250px;background-color: red;border-radius: 50px;border: none;">NÃO.
+            😪</button>
+    </div>
+</body>
+
+</html>
+<script>
+    shambles = () => {
+        button.style.position = "fixed"
+        position = Math.floor(Math.random() * (0 + 80))
+        button.style.top = `${position}%`
+        button.style.left = `${position}%`
+        button.style.right = `${position}%`
+        button.style.bottom = `${position}%`
+    }
+
+    button.addEventListener("mouseover", shambles)
+    button.addEventListener("click", shambles)
+
+    alright.addEventListener("click", () => {
+        h1 = document.createElement("h1")
+        h1.innerHTML = "ALELUIA! 🙏<br>PARA QUANDO? KKK."
+        document.body.innerText = ""
+        document.body.appendChild(h1)
+    })
+</script>
